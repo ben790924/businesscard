@@ -13,7 +13,7 @@
       <transition name="inputTransition" mode="out-in">
         <div class="wrapper1" v-show="isShow == 1">
           <div class="title">Company Name ?</div>
-          <input type="text" placeholder="Type Here ..." @keydown.enter="isShow = 2" v-model="title" maxlength="8">
+          <input type="text" placeholder="Type Here ..." @keydown.enter="isShow = 2" v-model="title" maxlength="8" autofocus>
           <div style="font-size: 1.7vw; margin-top:10px; font-weight:300">Choose Your Color <i class="fas fa-hand-point-down"></i> </div>
           <i-color recommend v-model="color1" alpha style="width:20vw;"></i-color>
         </div>
